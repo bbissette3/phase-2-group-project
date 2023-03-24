@@ -320,7 +320,177 @@
             "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/1426.gif",
             "name":"smith seated wrist curl",
             "target":"forearms"
+        },
+        {
+            "id": 70,
+            "bodyPart":"upper legs",
+            "equipment":"body weight",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/1512.gif",
+            "name":"all fours squad stretch",
+            "target":"quads"
+        },
+        {
+            "id": 71,
+            "name":"backward jump",
+            "target":"quads",
+            "bodyPart":"upper legs",
+            "equipment":"body weight",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/1512.gif"
+        },
+        {
+            "id": 72,
+            "name":"all fours squad stretch",
+            "target":"quads",
+            "bodyPart":"upper legs",
+            "equipment":"body weight",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/3214.gif"
+        },
+        {
+            "id": 73,
+            "bodyPart":"upper legs",
+            "equipment":"band",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0980.gif",
+            "name":"band bent-over hip extension",
+            "target":"glutes"
+        },
+        {
+            "id": 74,
+            "bodyPart":"upper legs",
+            "equipment":"band",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/1408.gif",
+            "name":"band hip lift",
+            "target":"glutes"
+        },
+        {
+            "id": 75,
+            "bodyPart":"upper legs",
+            "equipment":"band",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0984.gif",
+            "name":"band lying hip internal rotation",
+            "target":"glutes"
+        },
+        {
+            "id": 76,
+            "bodyPart":"upper legs",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0024.gif",
+            "name":"barbell bench front squat",
+            "target":"quads"
+        },
+        {
+            "id": 77,
+            "bodyPart":"upper legs",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0026.gif",
+            "name":"barbell bench squat",
+            "target":"quads"
+        },
+        {
+            "id": 78,
+            "bodyPart":"upper legs",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0028.gif",
+            "name":"barbell clean and press",
+            "target":"quads"
+        },
+        {
+            "id": 79,
+            "bodyPart":"upper legs",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0029.gif",
+            "name":"barbell clean-grip front squat",
+            "target":"glutes"
+        },
+        {
+            "id": 80,
+            "bodyPart":"upper legs",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0032.gif",
+            "name":"barbell deadlift",
+            "target":"glutes"
+        },
+        {
+            "id": 81,
+            "bodyPart":"waist",
+            "equipment":"body weight",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0001.gif",
+            "name":"3/4 sit-up",
+            "target":"abs"
+        },
+        {
+            "id": 82,
+            "bodyPart":"waist",
+            "equipment":"body weight",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0002.gif",
+            "name":"45° side bend",
+            "target":"abs"
+        },
+        {
+            "id": 83,
+            "bodyPart":"waist",
+            "equipment":"body weight",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0003.gif",
+            "name":"air bike",
+            "target":"abs"
+        },
+        {
+            "id": 84,
+            "bodyPart":"waist",
+            "equipment":"band",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0969.gif",
+            "name":"band alternating v-up",
+            "target":"abs"
+        },
+        {
+            "id": 85,
+            "bodyPart":"waist",
+            "equipment":"band",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0971.gif",
+            "name":"band assisted wheel rollerout",
+            "target":"abs"
+        },
+        {
+            "id": 86,
+            "bodyPart":"waist",
+            "equipment":"band",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0972.gif",
+            "name":"band bicycle crunch",
+            "target":"abs"
+        },
+        {
+            "id": 87,
+            "bodyPart":"waist",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0071.gif",
+            "name":"barbell press sit-up",
+            "target":"abs"
+        },
+        {
+            "id": 88,
+            "bodyPart":"waist",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0084.gif",
+            "name":"barbell rollerout",
+            "target":"abs"
+        },
+        {
+            "id": 89,
+            "bodyPart":"waist",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0083.gif",
+            "name":"barbell rollerout from bench",
+            "target":"abs"
+        },
+        {
+            "id": 90,
+            "bodyPart":"waist",
+            "equipment":"barbell",
+            "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0094.gif",
+            "name":"barbell seated twist"
         }
+        
+        
+        
     ]
 
 }
