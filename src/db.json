@@ -482,6 +482,78 @@
       "target": "biceps"
     },
     {
+        "id": 61,
+        "bodyPart":"shoulders",
+        "equipment":"band",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0997.gif",
+        "name":"band shoulder press",
+        "target":"delts"
+    },
+    {   
+        "id": 62,
+        "bodyPart":"shoulders",
+        "equipment":"band",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/1022.gif",
+        "name":"band standing rear delt row",
+        "target":"delts"
+    },
+    {
+        "id": 63,
+        "bodyPart":"shoulders",
+        "equipment":"dumbbell",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/2137.gif",
+        "name":"dumbbell arnold press",
+        "target":"delts"
+    },
+    {
+        "id": 64,
+        "bodyPart":"shoulders",
+        "equipment":"barbell",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0041.gif",
+        "name":"barbell front raise",
+        "target":"delts"
+    },
+    {    
+        "id": 65,
+        "bodyPart":"shoulders",
+        "equipment":"barbell",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0067.gif",
+        "name":"barbell one arm snatch",
+        "target":"delts"
+    },
+    {    
+        "id": 66,
+        "bodyPart":"shoulders",
+        "equipment":"barbell",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0075.gif",
+        "name":"barbell rear delt raise",
+        "target":"delts"
+    },
+    {
+        "id": 67,
+        "bodyPart":"shoulders",
+        "equipment":"rope",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0128.gif",
+        "name":"battling ropes",
+        "target":"delts"
+    },
+    {    
+        "id": 68,
+        "bodyPart":"shoulders",
+        "equipment":"cable",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0148.gif",
+        "name":"cable alternate shoulder press",
+        "target":"delts"
+    },
+    {    
+        "id": 69,
+        "bodyPart":"shoulders",
+        "equipment":"cable",
+        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0154.gif",
+        "name":"cable cross-over revers fly",
+        "target":"delts"
+    },
+    {
       "id": 70,
       "bodyPart": "upper legs",
       "equipment": "body weight",
