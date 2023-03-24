@@ -3,7 +3,7 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 
 const WorkoutCard = ({workoutDetail}) => {
   
-  const { bodyPart, equipment, gifUrl, name, target } = workoutDetail
+  const { bodyPart, equipment, gifUrl, name, target, image} = workoutDetail
 
   return (
   <Card>
@@ -14,8 +14,9 @@ const WorkoutCard = ({workoutDetail}) => {
         <span className='date'>{bodyPart} : {target}</span>
       </Card.Meta>
       <Card.Description>
-        Eqipment needed: {equipment}
+        Equipment needed: {equipment}
       </Card.Description>
+      <Image src='./images/image1.jpeg' size='small' /> 
     </Card.Content>
     <Card.Content extra>
       <a>
