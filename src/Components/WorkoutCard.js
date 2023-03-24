@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Icon, Image } from "semantic-ui-react";
 
-const WorkoutCard = ({ workoutDetail }) => {
+const WorkoutCard = ({ workoutDetail, handleFav }) => {
   const { bodyPart, equipment, gifUrl, name, target } = workoutDetail;
 
   return (
@@ -22,7 +22,7 @@ const WorkoutCard = ({ workoutDetail }) => {
           22 Friends
         </a>
         <a>
-          <button onClick={() => console.log("This is amazing!")}>♡</button>
+          <button onClick={() => handleFav(workoutDetail)}>♡</button>
         </a>
       </Card.Content>
     </Card>

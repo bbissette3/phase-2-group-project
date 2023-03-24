@@ -1,8 +1,8 @@
 import React from "react";
 import WorkoutCard from "./WorkoutCard";
 
-const CardContainer = ({ workoutDataArray, handleFav }) => {
-  const workoutDetails = workoutDataArray.map((workoutDetail) => {
+const FavWorkout = ({ favStuff, handleFav }) => {
+  const workout = favStuff.map((workoutDetail) => {
     return (
       <WorkoutCard
         key={workoutDetail.id}
@@ -14,10 +14,10 @@ const CardContainer = ({ workoutDataArray, handleFav }) => {
 
   return (
     <>
-      <h2>Card Container</h2>
-      <div className="workout-list">{workoutDetails}</div>
+      <h4>This is the favs</h4>
+      <div>{workout}</div>
     </>
   );
 };
 
-export default CardContainer;
+export default FavWorkout;
