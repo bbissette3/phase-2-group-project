@@ -22,7 +22,14 @@ const WorkoutCard = ({ workoutDetail, handleFav }) => {
           22 Friends
         </a>
         <a>
-          <button onClick={() => handleFav(workoutDetail)}>♡</button>
+          <button
+            variant="contained"
+            style={{ float: "right" }}
+            color="primary"
+            onClick={() => handleFav(workoutDetail)}
+          >
+            😴
+          </button>
         </a>
       </Card.Content>
     </Card>
