@@ -23,12 +23,13 @@ const WorkoutCard = ({ workoutDetail, handleFav }) => {
         </a>
         <a>
           <button
+            className="asleep"
             variant="contained"
-            style={{ float: "right" }}
+            style={{ float: "right", border: "none", backgroundColor: "white" }}
             color="primary"
             onClick={() => handleFav(workoutDetail)}
           >
-            😴
+            😴😀
           </button>
         </a>
       </Card.Content>

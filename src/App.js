@@ -12,7 +12,12 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3001/Workouts")
       .then((response) => response.json())
-      .then((workoutData) => setWorkoutDataArray(workoutData));
+      .then((workoutData) => {
+        const newWorkoutArray = workoutData.map((workout) => {
+          return { ...workout, liked: false };
+        });
+        setWorkoutDataArray(newWorkoutArray);
+      });
   }, []);
 
   const handleFav = (exercise) => {
