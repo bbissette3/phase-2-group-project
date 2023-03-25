@@ -36,12 +36,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <FilterWorkouts 
-        categories={categories} 
-        selected={selected}
-        toggleCategory={toggleCategory}
-      />
-      <CardContainer workoutDataArray={workOutsToShow}/>
+      <div className= "container">
+        <FilterWorkouts 
+          categories={categories} 
+          selected={selected}
+          toggleCategory={toggleCategory}
+        />
+        <CardContainer workoutDataArray={workOutsToShow}/>
+      </div>
       <Footer />
     </div>
   );
