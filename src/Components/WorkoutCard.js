@@ -6,6 +6,7 @@ const WorkoutCard = ({workoutDetail}) => {
   const { bodyPart, equipment, gifUrl, name, target, image} = workoutDetail
 
   return (
+  <div className="workout-card">
   <Card>
     <Image src={gifUrl} wrapped ui={false} />
     <Card.Content>
@@ -16,7 +17,7 @@ const WorkoutCard = ({workoutDetail}) => {
       <Card.Description>
         Equipment needed: {equipment}
       </Card.Description>
-      <Image src='./images/image1.jpeg' size='small' /> 
+      <Image src={image} size='small' /> 
     </Card.Content>
     <Card.Content extra>
       <a>
@@ -25,6 +26,7 @@ const WorkoutCard = ({workoutDetail}) => {
       </a>
     </Card.Content>
   </Card>
+  </div>
   )
   }
 
