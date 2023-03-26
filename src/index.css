@@ -1,16 +1,29 @@
-
-
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  display: flex;
+  gap: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.checkbox-wrapper {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.checkbox-wrapper:hover {
+  box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
+}
+
+.workout-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ui.card {
+  cursor: pointer;
+}
+
+.ui.card:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
 }

@@ -13,6 +13,7 @@ const CardContainer = ({ workoutDataArray, handleFav }) => {
   });
 
   return (
+
     <>
       <h2>Card Container</h2>
       <div className="workout-list">{workoutDetails}</div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Icon, Image } from "semantic-ui-react";
 
+
 const WorkoutCard = ({ workoutDetail, handleFav }) => {
   const { bodyPart, equipment, gifUrl, name, target } = workoutDetail;
 
@@ -15,6 +16,9 @@ const WorkoutCard = ({ workoutDetail, handleFav }) => {
           </span>
         </Card.Meta>
         <Card.Description>Eqipment needed: {equipment}</Card.Description>
+       </Card.Description>
+      <Image src='./images/image1.jpeg' size='small' /> 
+    </Card.Content>
       </Card.Content>
       <Card.Content extra>
         <a>
