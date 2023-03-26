@@ -3,40 +3,23 @@ import Header from "./Components/Header";
 import CardContainer from "./Components/CardContainer";
 import Footer from "./Components/Footer";
 import FilterWorkouts from "./Components/FilterWorkouts";
-import FavWorkout from "./Components/FavWorkout";
+import "./index.css"
 
 function App() {
   const [workoutDataArray, setWorkoutDataArray] = useState([]);
-  const [favStuff, setFavStuff] = useState([]);
-
+  //filter state
+  const [selected, setSelected] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/Workouts")
+    fetch('http://localhost:3001/Workouts')
       .then((response) => response.json())
-      .then((workoutData) => {
-        const newWorkoutArray = workoutData.map((workout) => {
-          return { ...workout, liked: false };
-        });
-        setWorkoutDataArray(newWorkoutArray);
-      });
+      .then((workoutData) => setWorkoutDataArray(workoutData))
   }, []);
-
-  const handleFav = (exercise) => {
-    if (!favStuff.includes(exercise)) {
-      const exerciseList = [...favStuff, exercise];
-      setFavStuff(exerciseList);
-    } else if (favStuff.includes(exercise)) {
-      const exerciseList = favStuff.filter(
-        (workout) => exercise.id !== workout.id
-      );
-      setFavStuff(exerciseList);
-    }
-  };
 
   //this is all for the filter
   const categories = ["All", "back", "cardio", "chest", "upper arms", "lower arms", "upper legs", "lower legs", "shoulders", "waist"]
 
-  const workOutsToShow = newWorkoutArray.filter((el) =>
+  const workOutsToShow = workoutDataArray.filter((el) =>
   selected.length === 0 || selected.includes("All") || selected.includes(el.bodyPart)
 );
 
@@ -48,7 +31,8 @@ function App() {
     }
   };
   //end of filter components
-   
+  
+  
   return (
     <div className="App">
       <Header />
@@ -58,7 +42,7 @@ function App() {
           selected={selected}
           toggleCategory={toggleCategory}
         />
-        <CardContainer workoutDataArray={workOutsToShow} handleFav={handleFav} />
+        <CardContainer workoutDataArray={workOutsToShow}/>
       </div>
       <Footer />
     </div>
