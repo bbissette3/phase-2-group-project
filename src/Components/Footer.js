@@ -1,10 +1,13 @@
 import React from 'react'
 import { Item, Icon, Button } from 'semantic-ui-react'
 
-const Footer = () => (
+const Footer = () => {
+  return (
+    <div className='footer'>
+
   <Item.Group>
     <Item>
-      <Item.Content position="right">
+      <Item.Content >
       <Button color="blue" basic icon>
         <Icon name="facebook" ></Icon>
           Give us a like on Facebook!
@@ -13,7 +16,7 @@ const Footer = () => (
     </Item>
 
     <Item>
-      <Item.Content position="right">
+      <Item.Content >
       <Button color="purple" basic icon>
         <Icon name="instagram" ></Icon>
          Follow the team on Instagram!
@@ -22,7 +25,7 @@ const Footer = () => (
     </Item>
 
     <Item>
-      <Item.Content position="right">
+      <Item.Content >
       <Button color="red" basic icon>
         <Icon name="youtube" ></Icon>
          Subscribe to our channel!
@@ -30,6 +33,8 @@ const Footer = () => (
       </Item.Content>
     </Item>
   </Item.Group>
-)
+    </div>
+  )
+  }
 
 export default Footer;
