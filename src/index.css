@@ -3,6 +3,15 @@
   gap: 1rem;
 }
 
+.filters-container {
+  position: relative;
+}
+
+.checkbox {
+  position: sticky;
+  top: 0;
+}
+
 .checkbox-wrapper {
   width: 100px;
   margin-bottom: 10px;
