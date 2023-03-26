@@ -1,30 +1,32 @@
 import React from 'react'
-import { Image } from 'semantic-ui-react'
-import { Item } from 'semantic-ui-react'
+import { Item, Icon, Button } from 'semantic-ui-react'
 
 const Footer = () => (
   <Item.Group>
     <Item>
-      <Item.Image size='small' src='/images/wireframe/image.png' />
-
-      <Item.Content horizontalAlign='left'>
-        <Item.Header>left Aligned</Item.Header>
+      <Item.Content position="right">
+      <Button color="blue" basic icon>
+        <Icon name="facebook" ></Icon>
+          Give us a like on Facebook!
+        </Button>
       </Item.Content>
     </Item>
 
     <Item>
-      <Item.Image size='small' src='/images/wireframe/image.png' />
-
-      <Item.Content horizontalAlign='middle'>
-        <Item.Header>Middle Aligned</Item.Header>
+      <Item.Content position="right">
+      <Button color="purple" basic icon>
+        <Icon name="instagram" ></Icon>
+         Follow the team on Instagram!
+        </Button>
       </Item.Content>
     </Item>
 
     <Item>
-      <Item.Image size='small' src='/images/wireframe/image.png' />
-
-      <Item.Content horizontalAlign='right'>
-        <Item.Header>Right Aligned</Item.Header>
+      <Item.Content position="right">
+      <Button color="red" basic icon>
+        <Icon name="youtube" ></Icon>
+         Subscribe to our channel!
+        </Button>
       </Item.Content>
     </Item>
   </Item.Group>
