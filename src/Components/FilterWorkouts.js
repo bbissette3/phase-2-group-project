@@ -8,7 +8,7 @@ const FilterWorkouts = ({  categories, setSetlected }) => {
   ))
 
   return (
-    <div className="ui radio checkbox">
+    <div className="ui-radio-checkbox">
       <h5>Category Filters</h5>
       {categoryButtons}
     </div>
