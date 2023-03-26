@@ -37,3 +37,19 @@
   box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
 }
 
+.ui.items {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui.item.button:hover {
+  box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
+
+}
+
+.footer {
+  min-height: 15vh;
+  background-color: rgb(208, 242, 116);
+}
