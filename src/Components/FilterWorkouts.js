@@ -14,10 +14,12 @@ const FilterWorkouts = ({  categories, toggleCategory, selected }) => {
   ));
 
   return (
-    <div className="checkbox">
-      <h5>Filters</h5>
-      {categoryButtons}
-    </div>
+    <div className='filters-container'> 
+      <div className="checkbox">
+        <h5>Filters</h5>
+        {categoryButtons}
+      </div>
+      </div>
   )
 };
 
