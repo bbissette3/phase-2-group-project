@@ -7,7 +7,7 @@ const Home = () => {
         <div className="home" >
              <Segment centered>
                 <Image src={logo} size='large' circular centered/>
-                <p centered>fill this shit in later</p>
+                <p >fill this shit in later</p>
              </Segment>
         </div>
     )
