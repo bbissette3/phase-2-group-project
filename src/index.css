@@ -83,6 +83,7 @@
   margin-bottom: 10px; 
 } 
 
+
 h2{
   text-align: center;
 }
@@ -102,4 +103,8 @@ p {
   gap: 1rem;
   margin-top: 10px;
   margin-bottom: 10px;
+
+.home-form {
+  padding-left: 10px;
+  padding-right: 10px;
 }

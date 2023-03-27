@@ -5,9 +5,8 @@ import {
     Image,
     Button,
     Form,
-    Input,
-    Radio,
     Select,
+    Icon
 } from 'semantic-ui-react'
 
 const options = [
@@ -19,54 +18,68 @@ const options = [
     { key: 'o', text: 'Other', value: 'Other' },
   ]
   
-
 class Home extends Component {
     state = {}
 
-    handleChange = (e, { value }) => this.setState({ value })
+    handleChange = ({ name, value }) => this.setState({ [name]: value })
+
+    handleSubmit = () => this.setState({ email:'', name:'', option:''})
 
     render() {
-        const { value } = this.state
+        const { name, email, option} = this.state
     return (
         <div className="home" >
-             <Segment centered>
-                <Image src={logo} size='large' circular centered/>
-                <h2>About Us</h2>
-                <p>Our gym was created by 3 extreme finess competitors 
-                    who grew a passion for helping other people reach their
-                    goals too! We offer group training classes, personal 
-                    training sessions and we now have an online based training, 
-                    so you can get swoll in the comfort of your own home! 
-                    Each of our trainers have years of expierence and their own 
-                    unique specialties and training styles, giving our clients
-                    a variety of different workouts to choose from. We take pride 
-                    in our training and ability to work one-on-one with clients 
-                    to give them the best diet and exercise routines that work with 
-                    their indivual lifestyles and body types. Sign up down below for 
-                    a consultation and recieve your first month with us completely free!
-                </p>
-             </Segment>
-             <Form>
+            <div className='home-bio'>
+                <Segment centered>
+                    <Image src={logo} size='large' circular centered/>
+                    <h2>About Us</h2>
+                    <p>Our gym was created by 3 extreme finess competitors 
+                        who grew a passion for helping other people reach their
+                        goals too! We offer group training classes, personal 
+                        training sessions and we now have an online based training, 
+                        so you can get swoll in the comfort of your own home! 
+                        Each of our trainers have years of expierence and their own 
+                        unique specialties and training styles, giving our clients
+                        a variety of different workouts to choose from. We take pride 
+                        in our training and ability to work one-on-one with clients 
+                        to give them the best diet and exercise routines that work with 
+                        their indivual lifestyles and body types. Sign up down below for 
+                        a consultation and recieve your first month with us completely free!
+                    </p>
+                </Segment>
+            </div>
+            <div className='home-form'>
+             <Form onSubmit={this.handleSubmit}>
                 <Form.Group widths='equal'>
-                <Form.Field
-                    control={Input}
-                    label='Name'
+                <Form.Input
+                    value={name}
+                    name='name'
                     placeholder='Name'
+                    onChange={this.handleChange}
                 />
-                <Form.Field
-                    control={Input}
-                    label='Email Address'
+                <Form.Input
+                    value={email}
+                    name='email'
                     placeholder='Email Address'
+                    onChange={this.handleChange}
                 />
-                <Form.Field
+                <Form.Input
+                    value={option}
                     control={Select}
-                    label='How did you hear about us?'
+                    name='referral'
                     options={options}
                     placeholder='How did you hear about us?'
+                    onChange={this.handleChange}
                 />
                 </Form.Group>
-                <Form.Field control={Button}>Submit</Form.Field>
-      </Form>
+                 <Button animated fluid color="blue">
+                    <Button.Content visible>Get my first month free!</Button.Content>
+                    <Button.Content hidden>
+                        <Icon name="paper plane outline"/>
+                    </Button.Content>
+                </Button>
+            </Form>
+            </div>
         </div>
     )
   }

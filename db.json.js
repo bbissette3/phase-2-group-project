@@ -1,5 +1,7 @@
+ import meter1 from "./src/images/meter1.png"
+ 
  {
-  "Workouts": [
+  "Workouts"; [
     {
       "id": 1,
       "bodyPart": "back",
@@ -7,7 +9,7 @@
       "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1018.gif",
       "name": "band shrug",
       "target": "traps",
-      "image": "./src/images/meter1.png"
+      "image": "https://ibb.co/yQHhnrC"
     },
     {
       "id": 2,
