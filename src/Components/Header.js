@@ -19,7 +19,7 @@ const Header = () => {
       </Menu.Item>
       <Menu.Item position="center">
       <Link to="/workouts">
-        <Button  color='blue' basic>
+        <Button color='blue' basic>
           Check out our Free Workouts!
         </Button>
         </Link>

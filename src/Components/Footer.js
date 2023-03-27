@@ -6,7 +6,7 @@ const Footer = () => {
 
     <div className='footer'>
     <Sticky >
-    <Item.Group>
+    <Item.Group widths='equal'>
       <Item>
         <Item.Content >
         <Button color="blue" basic icon centered>
