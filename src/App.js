@@ -10,6 +10,7 @@ import FilterWorkouts from "./Components/FilterWorkouts";
 import Home from "./Components/Home";
 import Trainers from "./Components/Trainers";
 import Favorites from "./Components/Favorites";
+import WorkoutDetails from "./Components/WorkoutDetails";
 
 function App() {
   const [workoutDataArray, setWorkoutDataArray] = useState([]);
@@ -53,6 +54,9 @@ function App() {
               <CardContainer workoutDataArray={workOutsToShow}/> 
             </div>
           }/>
+          <Route path="/workouts/:workoutId" element={
+            <WorkoutDetails workoutDataArray={workoutDataArray} />}
+          />
           <Route path="/trainers" element={<Trainers />} />
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
