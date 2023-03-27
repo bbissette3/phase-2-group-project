@@ -46,17 +46,11 @@ const WorkoutDetails = ({ workoutDataArray, favWorkouts }) => {
             <Icon name="arrow left" />
           </Button.Content>
         </Button>
-        <Button
-          className="heart icon"
-          variant="contained"
-          color="primary"
-          onClick={() => favWorkouts(workout)}
-        >
-          Save
+        <Button color="primary" onClick={() => favWorkouts(workout)}>
+          <Button.Content>Save</Button.Content>
         </Button>
       </div>
-  </div>
-
+    </div>
   );
 };
 
