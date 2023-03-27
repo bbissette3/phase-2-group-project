@@ -1,11 +1,21 @@
-import React from 'react';
+import React from "react";
+import WorkoutCard from "./WorkoutCard";
 
-const Favorites = () => {
+const Favorites = ({ savedWorkout, favWorkouts }) => {
+  const likedWorkouts = savedWorkout.map((workoutDetail) => {
     return (
-        <div className="favorites" >
-            <p>stupid favorites</p>
-        </div>
-    )
-}
+      <WorkoutCard
+        key={workoutDetail.id}
+        workoutDetail={workoutDetail}
+        favWorkouts={favWorkouts}
+      />
+    );
+  });
+  return (
+    <div className="favorites">
+      <p>{likedWorkouts}</p>
+    </div>
+  );
+};
 
 export default Favorites;
