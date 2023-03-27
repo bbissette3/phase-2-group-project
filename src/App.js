@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Components/Header";
-import CardContainer from "./Components/CardContainer";
-import Footer from "./Components/Footer";
-import FilterWorkouts from "./Components/FilterWorkouts";
+import { Routes, Route } from "react-router-dom";
+
 import "./index.css"
+import Header from "./Components/Header"
+import Footer from "./Components/Footer";
+
+import CardContainer from "./Components/CardContainer";
+import FilterWorkouts from "./Components/FilterWorkouts";
+import Home from "./Components/Home";
+import Trainers from "./Components/Trainers";
+import Favorites from "./Components/Favorites";
 
 function App() {
   const [workoutDataArray, setWorkoutDataArray] = useState([]);
@@ -34,18 +40,25 @@ function App() {
   
   
   return (
-    <div className="App">
-      <Header />
-      <div className= "container">
-        <FilterWorkouts 
-          categories={categories} 
-          selected={selected}
-          toggleCategory={toggleCategory}
-        />
-        <CardContainer workoutDataArray={workOutsToShow}/>
-      </div>
-      <Footer />
-    </div>
+      <main className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/workouts" element={
+            <div className="comtainer" >
+              <FilterWorkouts 
+                categories={categories} 
+                selected={selected}
+                toggleCategory={toggleCategory}/>
+              <CardContainer workoutDataArray={workOutsToShow}/> 
+            </div>
+          }/>
+          <Route path="/trainers" element={<Trainers />} />
+          <Route path="/favorites" element={<Favorites />} />
+        </Routes>
+        <Footer />
+      </main>
+  
   );
 }
 

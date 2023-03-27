@@ -1,11 +1,13 @@
 import React from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
+import BigCard from './BigCard'
 
 const WorkoutCard = ({workoutDetail}) => {
   
   const { bodyPart, equipment, gifUrl, name, target, image} = workoutDetail
 
   return (
+    <div className='card-info'> <BigCard />
   <div className="workout-card">
   <Card>
     <Image src={gifUrl} wrapped ui={false} />
@@ -19,13 +21,8 @@ const WorkoutCard = ({workoutDetail}) => {
       </Card.Description>
       <Image src={image} size='small' /> 
     </Card.Content>
-    <Card.Content extra>
-      <a>
-        <Icon name='user' />
-        22 Friends
-      </a>
-    </Card.Content>
   </Card>
+  </div>
   </div>
   )
   }

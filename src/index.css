@@ -4,7 +4,7 @@
 }
 
 .filters-container {
-  position: relative;
+  position: sticky;
 }
 
 .checkbox {
@@ -26,6 +26,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .ui.card {
@@ -46,10 +49,19 @@
 
 .ui.item.button:hover {
   box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
-
 }
 
 .footer {
   min-height: 15vh;
   background-color: rgb(208, 242, 116);
+}
+
+.ui.menu.item {
+  justify-content: center;
+}
+
+.trainers {
+  display: flex;
+  background-color: blue;
+  color: antiquewhite;
 }
