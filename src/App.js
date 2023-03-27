@@ -68,6 +68,7 @@ function App() {
     }
   };
   // end of favs
+  
 
   return (
     <main className="App">
@@ -94,16 +95,15 @@ function App() {
             <WorkoutDetails workoutDataArray={workoutDataArray} />}
           />
           <Route path="/trainers" element={<Trainers />} />
-          <Route
-          path="/favorites"
-          element={
+          <Route path="/favorites" element={
             <Favorites savedWorkout={savedWorkout} favWorkouts={favWorkouts} />
-          }
-        /
+            }
+          />
         </Routes>
         <Footer />
       </main>
   
-
+  )
+};
 
 export default App;
