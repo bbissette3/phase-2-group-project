@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Image } from 'semantic-ui-react'
+import { Segment, Image, } from 'semantic-ui-react'
 import logo from '../images/logo.jpeg';
 
 const Trainers = () => {
@@ -23,8 +23,8 @@ const Trainers = () => {
                         gold medals before I started training some of my gym buddies for fun
                         and eventually got licensed to train professionally. </p>
                 </Segment>
-                <Segment>
-                    <Image src={logo} size='medium' circular centered/>                        
+                <Segment>                      
+                    <Image src={logo} size='medium' circular centered/>  
                     <p>Hey everyone! My name is Aubrey and I've been a personal trainer for 4 
                         years and a certified nutrition coach for 6 years! I have a major in 
                         Health and Phyical Education with a minor in Sports Studies. I recently 

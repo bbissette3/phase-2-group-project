@@ -74,9 +74,8 @@
 }
 
 .trainer-pictures {
-
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-color: red;
   gap: 1rem;
   margin-left: 20px;
