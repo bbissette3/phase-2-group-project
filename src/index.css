@@ -9,6 +9,10 @@
   position: sticky;
 }
 
+/* .App {
+  background-color: rgb(15, 15, 160);
+} */
+
 .checkbox {
   position: sticky;
   top: 0;
@@ -62,7 +66,19 @@
 }
 
 .trainers {
-  display: flex;
-  background-color: blue;
-  color: antiquewhite;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
 }
+
+.trainer-pictures {
+
+  display: flex;
+  flex-direction: column;
+  border-color: red;
+  gap: 1rem;
+  margin-left: 20px;
+  margin-bottom: 10px; 
+} 
