@@ -1,9 +1,8 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React from "react";
+import { useParams, Link } from "react-router-dom";
 import { Button, Icon } from "semantic-ui-react";
 
-const WorkoutDetails = ({ workoutDataArray }) => {
-
+const WorkoutDetails = ({ workoutDataArray, favWorkouts }) => {
   const { workoutId } = useParams();
 
   const workout = workoutDataArray.find(
@@ -34,11 +33,19 @@ const WorkoutDetails = ({ workoutDataArray }) => {
       <h2>Difficulty Level:</h2>
       <img src={image} alt={`${name} difficulty`} />
       <br />
-      <Button animated as={Link} to="/workouts"  color="red" >
+      <Button animated as={Link} to="/workouts" color="red">
         <Button.Content visible>Back</Button.Content>
         <Button.Content hidden>
-            <Icon name="arrow left" />
+          <Icon name="arrow left" />
         </Button.Content>
+      </Button>
+      <Button
+        className="heart icon"
+        variant="contained"
+        color="primary"
+        onClick={() => favWorkouts(workout)}
+      >
+        Save
       </Button>
     </div>
   );

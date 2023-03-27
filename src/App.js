@@ -68,7 +68,6 @@ function App() {
     }
   };
   // end of favs
-  
 
   return (
     <main className="App">
@@ -89,21 +88,28 @@ function App() {
                 favWorkouts={favWorkouts}
               />
             </div>
-
-          }/>
-          <Route path="/workouts/:workoutId" element={
-            <WorkoutDetails workoutDataArray={workoutDataArray} />}
-          />
-          <Route path="/trainers" element={<Trainers />} />
-          <Route path="/favorites" element={
+          }
+        />
+        <Route
+          path="/workouts/:workoutId"
+          element={
+            <WorkoutDetails
+              workoutDataArray={workoutDataArray}
+              favWorkouts={favWorkouts}
+            />
+          }
+        />
+        <Route path="/trainers" element={<Trainers />} />
+        <Route
+          path="/favorites"
+          element={
             <Favorites savedWorkout={savedWorkout} favWorkouts={favWorkouts} />
-            }
-          />
-        </Routes>
-        <Footer />
-      </main>
-  
-  )
-};
+          }
+        />
+      </Routes>
+      <Footer />
+    </main>
+  );
+}
 
 export default App;
