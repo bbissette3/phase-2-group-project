@@ -1,18 +1,19 @@
 import React from "react";
 import WorkoutCard from "./WorkoutCard";
 
-const Favorites = ({ savedWorkout, favWorkouts }) => {
-  const likedWorkouts = savedWorkout.map((workoutDetail) => {
+const Favorites = ({ savedWorkouts, addFavWorkouts }) => {
+  const likedWorkouts = savedWorkouts.map((workoutDetail) => {
     return (
       <WorkoutCard
         key={workoutDetail.id}
         workoutDetail={workoutDetail}
-        favWorkouts={favWorkouts}
+        addFavWorkouts={addFavWorkouts}
       />
     );
   });
   return (
     <div className="favorites">
+      <h1>My Workouts</h1>
       <p>{likedWorkouts}</p>
     </div>
   );

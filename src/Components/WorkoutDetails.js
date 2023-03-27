@@ -2,7 +2,11 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button, Icon, Grid } from "semantic-ui-react";
 
-const WorkoutDetails = ({ workoutDataArray, favWorkouts }) => {
+const WorkoutDetails = ({
+  workoutDataArray,
+  addFavWorkouts,
+  savedWorkouts,
+}) => {
   const { workoutId } = useParams();
 
   const workout = workoutDataArray.find(
@@ -46,8 +50,10 @@ const WorkoutDetails = ({ workoutDataArray, favWorkouts }) => {
             <Icon name="arrow left" />
           </Button.Content>
         </Button>
-        <Button color="primary" onClick={() => favWorkouts(workout)}>
-          <Button.Content>Save</Button.Content>
+        <Button color="primary" onClick={() => addFavWorkouts(workout)}>
+          <Button.Content>
+            {savedWorkouts.includes(workout) ? "Unsave" : "Save"}
+          </Button.Content>
         </Button>
       </div>
     </div>

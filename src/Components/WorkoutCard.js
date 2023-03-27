@@ -1,10 +1,9 @@
 import React from "react";
-import { Card, Image, Button } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-const WorkoutCard = ({ workoutDetail, favWorkouts }) => {
-  const { id, bodyPart, equipment, gifUrl, name, target, image } =
-    workoutDetail;
+const WorkoutCard = ({ workoutDetail }) => {
+  const { id, gifUrl, name } = workoutDetail;
 
   return (
     <Link to={`/workouts/${id}`}>
