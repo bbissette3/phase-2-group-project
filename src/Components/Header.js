@@ -1,11 +1,11 @@
 import React from 'react';
-import { Menu , Button, Image } from 'semantic-ui-react'
-import {Link} from "react-router-dom"
-import logo from '../images/logo.jpeg'
+import { Menu , Button, Image } from 'semantic-ui-react';
+import {Link} from "react-router-dom";
+import logo from '../images/logo.jpeg';
 
 const Header = () => {
   return (
-    <div className="checkbox">
+    <div className="header">
       <Menu secondary pointing>
       <Image src={logo} width={200}/>
       <Menu.Item >

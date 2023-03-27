@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import "./index.css"
-import Header from "./Components/Header"
+import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
 import CardContainer from "./Components/CardContainer";
@@ -45,7 +45,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/workouts" element={
-            <div className="comtainer" >
+            <div className="container" >
               <FilterWorkouts 
                 categories={categories} 
                 selected={selected}
