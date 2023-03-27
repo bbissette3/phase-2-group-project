@@ -1,9 +1,11 @@
+
 .container {
   display: flex;
   gap: 1rem;
 }
 
 .filters-container {
+  padding-left: 20px;
   position: sticky;
 }
 
@@ -26,8 +28,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-left: 50px;
-  margin-top: 10px;
+  /* margin-left: 50px;
+  margin-top: 10px; */
   margin-bottom: 10px;
 }
 
@@ -56,8 +58,9 @@
   background-color: rgb(208, 242, 116);
 }
 
-.ui.menu.item {
-  justify-content: center;
+.header {
+  position: sticky;
+  margin-bottom: 10px;
 }
 
 .trainers {
