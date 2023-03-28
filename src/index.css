@@ -6,6 +6,11 @@
   min-height: 100vh;
 }
 
+.header-bar {
+  
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Animated-eagle-mage-0036.gif");
+}
+
 .home {
   background-image: linear-gradient(rgb(175, 35, 35), white, rgb(42, 42, 147));
 }

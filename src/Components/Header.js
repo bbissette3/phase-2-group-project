@@ -8,7 +8,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <div className="header">
+    <div className="header-bar">
       <Grid columns={5} verticalAlign="middle">
         <Grid.Row>
           <Grid.Column>
