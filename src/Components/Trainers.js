@@ -7,11 +7,11 @@ import tim from '../images/tim.jpeg';
 const Trainers = () => {
     return (
     <div className="trainers" >
-        <h2>Get To Know Your Trainer!</h2>
+        <h2>Get To Know Your Trainers!</h2>
         <Grid columns={3} divided>
             <Grid.Row>
                 <Grid.Column>
-                    <Image src={brian} size='medium' circular centered/>
+                    <Image id="brian-photo" src={brian} size='medium' circular centered color="red"/>
                     <p>
                         Hey y'all, I'm Brian but all my buddies call me Bicep Brian! 
                         I've been a trainer for 6 years now and have competed in 7 
