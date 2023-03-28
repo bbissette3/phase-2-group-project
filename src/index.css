@@ -13,8 +13,8 @@
 #team-logo {
   /* box-shadow: 2px 2px 5px black, 0 0 25px blue, 0 0 5px darkblue; */
   margin-top: 50px;
-  height: 450px;
-  width: 520px;
+  height: 500px;
+  width: 600px;
 }
 
 .home-bio h2 {
@@ -118,16 +118,16 @@
 }
 
 .trainers {
- background-color: rgb(162, 64, 64);
- padding-left: 10px;
+ background-color: rgb(162, 64, 64);background-image: linear-gradient(rgb(42, 42, 147), white, rgb(175, 35, 35));adding-left: 10px;
  padding-right: 10px;
 }
 
 .trainers h2 {
   font-family: "Bebas Neue";
   font-size: 60px;
-  color: rgb(43, 49, 100);
-  padding-top: 20px;
+  color: rgb(232, 226, 226);
+  text-shadow: 2px 2px 5px black, 0 0 25px red, 0 0 5px rgba(141, 26, 3, 0.597);
+  padding-top: 40px;
   padding-bottom: 50px;
  }
 
@@ -137,6 +137,12 @@
   font-family: "Gruppo";
   font-style: bold;
   font-size: 20;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#training-photo {
+  box-shadow: 1px 1px 5px white, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 h2 {
