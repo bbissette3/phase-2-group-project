@@ -7,9 +7,12 @@ const Favorites = ({ savedWorkouts }) => {
   });
   return (
     <div className="favorites">
-      <h1>My Workouts</h1>
-      <p>{likedWorkouts}</p>
-    </div>
+      <h2>My Workouts</h2>
+      <div className="favorites-container">
+        {likedWorkouts}
+      </div>
+      </div>
+ 
   );
 };
 

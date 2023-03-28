@@ -1,9 +1,12 @@
 import React from "react";
 import { Button, Image, Grid } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.jpeg";
 
 const Header = () => {
+
+  const location = useLocation();
+
   return (
     <div className="header">
       <Grid columns={5} verticalAlign="middle">
@@ -12,29 +15,29 @@ const Header = () => {
             <Image src={logo} width={200} />
           </Grid.Column>
           <Grid.Column>
-            <Link to="/">
-              <Button color="blue" basic>
+            <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>
+              <Button color="blue" basic={location.pathname !== "/"}>
                 HomePage
               </Button>
             </Link>
           </Grid.Column>
           <Grid.Column>
-            <Link to="/workouts">
-              <Button color="blue" basic>
+            <Link to="/workouts" aria-current={location.pathname === "/workouts" ? "page" : undefined}>
+              <Button color="blue" basic={location.pathname !== "/workouts"}>
                 Free Workouts
               </Button>
             </Link>
           </Grid.Column>
           <Grid.Column>
-            <Link to="/trainers">
-              <Button color="blue" basic>
+            <Link to="/trainers" aria-current={location.pathname === "/trainers" ? "page" : undefined}>
+              <Button color="blue" basic={location.pathname !== "/trainers"}>
                 Our Trainers
               </Button>
             </Link>
           </Grid.Column>
           <Grid.Column>
-            <Link to="/favorites">
-              <Button color="blue" basic>
+            <Link to="/favorites" aria-current={location.pathname === "/favorites" ? "page" : undefined}>
+              <Button color="blue" basic={location.pathname !== "/favorites"}>
                 My Favorite
               </Button>
             </Link>
