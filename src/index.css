@@ -1,7 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&family=Quicksand:wght@300&display=swap');
+
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.team-logo:hover {
+  box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
+}
+
+.home-bio h2 {
+  color: rgba(9, 8, 41, 0.474);
+  font-family: "Bebas Neue";
+  font-size: 50px;
+}
+
+.home-bio p {
+  font-family: "Gruppo";
+  font-size: 25px;
+  color: rgb(38, 85, 144);
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-color: rgb(196, 198, 199);
+}
+
+.home-form {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.home-button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.filters-container {
+  padding-top: 25px;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  background-color: rgb(179, 179, 181);
+}
+
+.filters-container h5{
+  font-family: "Gruppo";
+  font-size: 25px;
 }
 
 .container {
@@ -17,7 +64,7 @@
 }
 
 .checkbox-wrapper {
-  width: 100px;
+  width: 150px;
   margin-bottom: 10px;
 }
 
@@ -35,6 +82,11 @@
 
 .ui.card {
   cursor: pointer;
+}
+
+.header {
+  font-family: "Gruppo" !important;
+  text-align: center;
 }
 
 .ui.card:hover {
@@ -55,21 +107,42 @@
   padding-top: 10px;
   padding-left: 10px;
   min-height: 10vh;
-  background-color: rgb(208, 242, 116);
+  background-color: rgb(5, 6, 0);
 }
 
 .trainers {
+ background-color: rgb(162, 64, 64);
  padding-left: 10px;
  padding-right: 10px;
 }
 
+.trainers h2 {
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  color: rgb(43, 49, 100);
+  padding-top: 20px;
+  padding-bottom: 50px;
+ }
+
+.trainers p {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-family: "Gruppo";
+  font-style: bold;
+  font-size: 20;
+}
+
 h2 {
   text-align: center;
+  font-family: "Bebas Neue" !important;
+  font-size: 50px !important;
 }
 
 p {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: "Gruppo";
+  font-style: bold;
 }
 
 .workout-details-container {
@@ -82,12 +155,6 @@ p {
   gap: 1rem;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.home-form {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
 }
 
 .favorites {
