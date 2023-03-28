@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, Grid } from 'semantic-ui-react'
-import aubrey from '../images/aubrey.jpeg';
-import brian from '../images/brian.jpeg';
-import tim from '../images/tim.jpeg';
+import aubrey from '../images/aubrey.png';
+import brian from '../images/brian.png';
+import tim from '../images/tim.png';
 
 const Trainers = () => {
     return (
@@ -11,7 +11,7 @@ const Trainers = () => {
         <Grid columns={3} divided>
             <Grid.Row>
                 <Grid.Column>
-                    <Image id="brian-photo" src={brian} size='medium' circular centered color="red"/>
+                    <Image id="photo" src={brian} size='medium' circular centered color="red"/>
                     <p>
                         Hey y'all, I'm Brian but all my buddies call me Bicep Brian! 
                         I've been a trainer for 6 years now and have competed in 7 
