@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Image, Grid } from "semantic-ui-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../images/logo.jpeg";
+import logo from "../images/logo.png";
 
 const Header = () => {
 
@@ -17,7 +17,7 @@ const Header = () => {
           <Grid.Column>
             <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>
               <Button color="blue" basic={location.pathname !== "/"}>
-                HomePage
+                Home Page
               </Button>
             </Link>
           </Grid.Column>

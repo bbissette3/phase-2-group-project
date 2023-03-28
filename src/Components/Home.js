@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import teamLogo from "../images/teamLogo.jpeg";
+import teamLogo from "../images/teamLogo.png";
 import { Segment, Image, Button, Form, Select, Icon } from "semantic-ui-react";
 
 const options = [
@@ -23,8 +23,7 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="home-bio">
-          <Segment centered>
-            <Image id="team-logo" src={teamLogo} size="large" circular centered />
+            <Image id="team-logo" src={teamLogo} size="large" centered />
             <h2>About Us</h2>
             <p>
               Our gym was created by 3 extreme fitness competitors who grew a
@@ -40,7 +39,7 @@ class Home extends Component {
               a consultation and receive your first month with us completely
               free!
             </p>
-          </Segment>
+        
         </div>
         <div className="home-form">
           <Form onSubmit={this.handleSubmit}>
@@ -68,8 +67,8 @@ class Home extends Component {
             </Form.Group>
             <Button id="home-button" animated fluid color="blue">
               <Button.Content visible>Get my first month free!</Button.Content>
-              <Button.Content hidden>
-                <Icon name="paper plane outline" />
+              <Button.Content hidden> 
+                <Icon name="paper plane outline" /> Sent!
               </Button.Content>
             </Button>
           </Form>
