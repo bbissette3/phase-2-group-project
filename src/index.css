@@ -4,17 +4,13 @@
   padding-bottom: 10px;
 }
 
-.filters-container {
-  padding-left: 20px;
-  position: sticky;
-}
-
 /* .App {
   background-color: rgb(15, 15, 160);
 } */
 
 .checkbox {
   position: sticky;
+  padding-left: 10px;
   top: 0;
 }
 
@@ -44,19 +40,12 @@
   box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
 }
 
-.ui.items {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .ui.item.button:hover {
   box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
 }
 
 .footer {
+  position: sticky;
   padding-left: 10px;
   min-height: 15vh;
   background-color: rgb(208, 242, 116);
