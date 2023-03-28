@@ -16,7 +16,7 @@ const Trainers = () => {
                         Hey y'all, I'm Brian but all my buddies call me Bicep Brian! 
                         My fitness journey began with my time serving in the military.
                         I've been a trainer for 6 years now and have competed in 7 
-                        NPC Phil Health Classic Tournaments, placiing first in 3 of 
+                        NPC Phil Health Classic Tournaments, placing first in 3 of 
                         those competitions. I specialize in natural body building, and
                         hypertrophy training.
                     </p>
