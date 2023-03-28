@@ -94,7 +94,6 @@ function App() {
           path="/workouts/:workoutId"
           element={
             <WorkoutDetails
-              workoutDataArray={workoutDataArray}
               addFavWorkouts={addFavWorkouts}
               savedWorkouts={savedWorkouts}
             />

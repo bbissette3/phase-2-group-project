@@ -6,7 +6,8 @@
       "equipment": "band",
       "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1018.gif",
       "name": "band shrug",
-      "target": "traps"
+      "target": "traps",
+      "difficulty": 1
     },
     {
       "id": 2,

@@ -1,62 +1,66 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button, Icon, Grid } from "semantic-ui-react";
+import  meter1  from "../images/meter1.png";
 
-const WorkoutDetails = ({
-  workoutDataArray,
-  addFavWorkouts,
-  savedWorkouts,
-}) => {
+const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
+
+  const [workoutDetails, setWorkoutDetails] = useState([]);
   const { workoutId } = useParams();
 
-  const workout = workoutDataArray.find(
-    (workout) => workout.id === parseInt(workoutId)
-  );
+  useEffect(() => {
+    async function fetchData() {
+        const rawData = await fetch(`http://localhost:3001/Workouts/${workoutId}`)
+        const data = await rawData.json()
+        setWorkoutDetails(data)
+    }
+    fetchData()
+  }, [workoutId]);
 
-  if (!workout) {
-    return <div>Workout not found</div>;
-  }
+  const { bodyPart, equipment, gifUrl, name, target, difficulty } = workoutDetails;
 
-  const { bodyPart, equipment, gifUrl, name, target, image } = workout;
+  const meterMap = {
+    1: meter1
+  };
 
   return (
-    <div className="workout-details-container">
-      <Grid columns={3} divided>
-        <Grid.Row>
-          <Grid.Column>
-            <h2>Workout Name:</h2>
-            <p>{name}</p>
-            <h2>Muscle Group:</h2>
-            <p>
-              {bodyPart} : {target}
-            </p>
-            <h2>Equiment or BodyWeight?</h2>
-            <p>Equipment: {equipment}</p>
-          </Grid.Column>
-          <Grid.Column>
-            <h2>Gif Demo!</h2>
-            <img src={gifUrl} alt={name} />
-          </Grid.Column>
-          <Grid.Column>
-            <h2>Difficulty Level:</h2>
-            <img src={image} alt={`${name} difficulty`} />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-      <div className="workout-details-buttons">
-        <Button animated as={Link} to="/workouts" color="red">
-          <Button.Content visible>Back</Button.Content>
-          <Button.Content hidden>
-            <Icon name="arrow left" />
-          </Button.Content>
-        </Button>
-        <Button color="primary" onClick={() => addFavWorkouts(workout)}>
-          <Button.Content>
-            {savedWorkouts.includes(workout) ? "Unsave" : "Save"}
-          </Button.Content>
-        </Button>
+      <div className="workout-details-container">
+        <Grid columns={3} divided>
+          <Grid.Row>
+            <Grid.Column>
+              <h2>Workout Name:</h2>
+              <p>{name}</p>
+              <h2>Muscle Group:</h2>
+              <p>
+                {bodyPart} : {target}
+              </p>
+              <h2>Equiment or BodyWeight?</h2>
+              <p>Equipment: {equipment}</p>
+            </Grid.Column>
+            <Grid.Column>
+              <h2>Gif Demo!</h2>
+              <img src={gifUrl} alt={name} />
+            </Grid.Column>
+            <Grid.Column>
+              <h2>Difficulty Level:</h2>
+              <img src={meterMap[difficulty]} alt={`${name} difficulty`} />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <div className="workout-details-buttons">
+          <Button animated as={Link} to="/workouts" color="red">
+            <Button.Content visible>Back</Button.Content>
+            <Button.Content hidden>
+              <Icon name="arrow left" />
+            </Button.Content>
+          </Button>
+          <Button color="blue" onClick={() => addFavWorkouts(workoutDetails)}>
+            <Button.Content>
+              {savedWorkouts.find((workout)=> workout.id === workoutDetails.id) ? "Unsave" : "Save"}
+            </Button.Content>
+          </Button>
+        </div>
       </div>
-    </div>
   );
 };
 
