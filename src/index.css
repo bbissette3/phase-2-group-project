@@ -1,14 +1,14 @@
-
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .container {
   display: flex;
   gap: 1rem;
   padding-bottom: 10px;
 }
-
-/* .App {
-  background-color: rgb(15, 15, 160);
-} */
 
 .checkbox {
   position: sticky;
@@ -46,10 +46,15 @@
   box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
 }
 
+.footer-container {
+  margin-top: auto;
+}
+
 .footer {
   position: sticky;
+  padding-top: 10px;
   padding-left: 10px;
-  min-height: 15vh;
+  min-height: 10vh;
   background-color: rgb(208, 242, 116);
 }
 
