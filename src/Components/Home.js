@@ -30,7 +30,7 @@ class Home extends Component {
             passion for helping other people reach their goals too! We offer
             group training classes, personal training sessions and we now have
             an online based training, so you can get swoll in the comfort of
-            your own home! Each of our trainers have years of expierence and
+            your own home! Each of our trainers have years of experience and
             their own unique specialties and training styles, giving our clients
             a variety of different workouts to choose from. We take pride in our
             training and ability to work one-on-one with clients to give them
