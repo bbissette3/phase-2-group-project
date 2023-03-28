@@ -12,7 +12,7 @@ import meter7 from "../images/meter7.png";
 const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
   const [workoutDetails, setWorkoutDetails] = useState([]);
   const { workoutId } = useParams();
-  const  navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
@@ -40,7 +40,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
 
   const goBack = () => {
     navigate(-1);
-  }
+  };
 
   return (
     <div className="workout-details-container">
