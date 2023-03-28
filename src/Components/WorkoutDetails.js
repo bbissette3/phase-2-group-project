@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Button, Icon, Grid } from "semantic-ui-react";
 import meter1 from "../images/meter1.png";
 import meter2 from "../images/meter2.png";
@@ -12,6 +12,7 @@ import meter7 from "../images/meter7.png";
 const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
   const [workoutDetails, setWorkoutDetails] = useState([]);
   const { workoutId } = useParams();
+  const  navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
@@ -36,6 +37,10 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
     6: meter6,
     7: meter7,
   };
+
+  const goBack = () => {
+    navigate(-1);
+  }
 
   return (
     <div className="workout-details-container">
@@ -62,7 +67,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
         </Grid.Row>
       </Grid>
       <div className="workout-details-buttons">
-        <Button animated as={Link} to="/workouts" color="red">
+        <Button animated onClick={goBack} color="red">
           <Button.Content visible>Back</Button.Content>
           <Button.Content hidden>
             <Icon name="arrow left" />
