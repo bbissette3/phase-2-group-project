@@ -19,7 +19,7 @@ const FilterWorkouts = ({  categories, toggleCategory, selected }) => {
         <h5>Filters</h5>
         {categoryButtons}
       </div>
-      </div>
+    </div>
   )
 };
 
