@@ -83,10 +83,7 @@ function App() {
                 selected={selected}
                 toggleCategory={toggleCategory}
               />
-              <CardContainer
-                workoutDataArray={workOutsToShow}
-                addFavWorkouts={addFavWorkouts}
-              />
+              <CardContainer workoutDataArray={workOutsToShow} />
             </div>
           }
         />
@@ -102,12 +99,7 @@ function App() {
         <Route path="/trainers" element={<Trainers />} />
         <Route
           path="/favorites"
-          element={
-            <Favorites
-              savedWorkouts={savedWorkouts}
-              addFavWorkouts={addFavWorkouts}
-            />
-          }
+          element={<Favorites savedWorkouts={savedWorkouts} />}
         />
       </Routes>
       <Footer />
