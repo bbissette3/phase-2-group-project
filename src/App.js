@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-
 import "./index.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-
 import CardContainer from "./Components/CardContainer";
 import FilterWorkouts from "./Components/FilterWorkouts";
 import Home from "./Components/Home";
@@ -26,10 +24,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3001/Favorites")
-      .then((response) => response.json())
-      .then((favWorkouts) => setSavedWorkouts(favWorkouts));
-  }, []);
+    const fetchData = async () => {
+      const resp = await fetch("http://localhost:3001/Favorites");
+      const favWorkouts = await resp.json();
+      setSavedWorkouts(favWorkouts);
+    };
+    fetchData();
+  });
 
   //this is all for the filter
   const categories = [
