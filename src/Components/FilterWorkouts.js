@@ -16,7 +16,7 @@ const FilterWorkouts = ({  categories, toggleCategory, selected }) => {
   return (
     <div className='filters-container'> 
       <div className="checkbox">
-        <h5>Filters</h5>
+        <h5>Filter</h5>
         {categoryButtons}
       </div>
     </div>

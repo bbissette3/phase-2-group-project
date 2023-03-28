@@ -24,7 +24,7 @@ class Home extends Component {
       <div className="home">
         <div className="home-bio">
           <Segment centered>
-            <Image src={teamLogo} size="large" circular centered />
+            <Image id="team-logo" src={teamLogo} size="large" circular centered />
             <h2>About Us</h2>
             <p>
               Our gym was created by 3 extreme fitness competitors who grew a
@@ -66,7 +66,7 @@ class Home extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button animated fluid color="blue">
+            <Button id="home-button" animated fluid color="blue">
               <Button.Content visible>Get my first month free!</Button.Content>
               <Button.Content hidden>
                 <Icon name="paper plane outline" />
