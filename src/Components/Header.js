@@ -3,7 +3,6 @@ import { Menu , Button, Image } from 'semantic-ui-react';
 import {Link} from "react-router-dom";
 import logo from '../images/logo.jpeg';
 
-
 const Header = () => {
   return (
     <div className="header">

@@ -1,7 +1,5 @@
- import meter1 from "./src/images/meter1.png"
- 
- {
-  "Workouts"; [
+{
+  "Workouts": [
     {
       "id": 1,
       "bodyPart": "back",
