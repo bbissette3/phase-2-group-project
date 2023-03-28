@@ -58,11 +58,6 @@
   background-color: rgb(208, 242, 116);
 }
 
-.header {
-  position: sticky;
-  margin-bottom: 10px;
-}
-
 .trainers {
  padding-left: 10px;
  padding-right: 10px;
@@ -97,4 +92,16 @@ p {
 
 .favorites {
   padding-bottom: 30px;
+}
+
+.favorites-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.header {
+  text-align: center;
 }
