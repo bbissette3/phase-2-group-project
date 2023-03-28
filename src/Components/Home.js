@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../images/logo.jpeg";
+import teamLogo from "../images/teamLogo.jpeg";
 import { Segment, Image, Button, Form, Select, Icon } from "semantic-ui-react";
 
 const options = [
@@ -24,7 +24,7 @@ class Home extends Component {
       <div className="home">
         <div className="home-bio">
           <Segment centered>
-            <Image src={logo} size="large" circular centered />
+            <Image src={teamLogo} size="large" circular centered />
             <h2>About Us</h2>
             <p>
               Our gym was created by 3 extreme fitness competitors who grew a
