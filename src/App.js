@@ -25,6 +25,12 @@ function App() {
       .then((workoutData) => setWorkoutDataArray(workoutData));
   }, []);
 
+  useEffect(() => {
+    fetch("http://localhost:3001/Favorites")
+      .then((response) => response.json())
+      .then((favWorkouts) => setSavedWorkouts(favWorkouts));
+  }, []);
+
   //this is all for the filter
   const categories = [
     "All",
@@ -57,14 +63,30 @@ function App() {
 
   // this is for favs
   const addFavWorkouts = (exercise) => {
-    if (!savedWorkouts.includes(exercise)) {
-      const newExercise = [...savedWorkouts, exercise];
-      setSavedWorkouts(newExercise);
-    } else if (savedWorkouts.includes(exercise)) {
-      const newExercise = savedWorkouts.filter(
-        (oldExercise) => exercise.id !== oldExercise.id
-      );
-      setSavedWorkouts(newExercise);
+    const postObj = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(exercise),
+    };
+
+    if (!savedWorkouts.find((workout) => workout.id === exercise.id)) {
+      fetch("http://localhost:3001/Favorites", postObj)
+        .then((resp) => resp.json())
+        .then((exercise) => {
+          const updateFavorites = [...savedWorkouts, exercise];
+          setSavedWorkouts(updateFavorites);
+        });
+    } else {
+      fetch(`http://localhost:3001/Favorites/${exercise.id}`, {
+        method: "DELETE",
+      }).then(() => {
+        const updateFavorites = savedWorkouts.filter(
+          (oldExercise) => exercise.id !== oldExercise.id
+        );
+        setSavedWorkouts(updateFavorites);
+      });
     }
   };
   // end of favs

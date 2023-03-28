@@ -450,7 +450,6 @@
       "target": "calves",
       "difficulty": 1
     },
-
     {
       "id": 51,
       "bodyPart": "upper arms",
@@ -542,85 +541,85 @@
       "difficulty": 3
     },
     {
-        "id": 61,
-        "bodyPart":"shoulders",
-        "equipment":"band",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0997.gif",
-        "name":"band shoulder press",
-        "target":"delts",
-        "difficulty": 2
-    },
-    {   
-        "id": 62,
-        "bodyPart":"shoulders",
-        "equipment":"band",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/1022.gif",
-        "name":"band standing rear delt row",
-        "target":"delts",
-        "difficulty": 5
+      "id": 61,
+      "bodyPart": "shoulders",
+      "equipment": "band",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0997.gif",
+      "name": "band shoulder press",
+      "target": "delts",
+      "difficulty": 2
     },
     {
-        "id": 63,
-        "bodyPart":"shoulders",
-        "equipment":"dumbbell",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/2137.gif",
-        "name":"dumbbell arnold press",
-        "target":"delts",
-        "difficulty": 6
+      "id": 62,
+      "bodyPart": "shoulders",
+      "equipment": "band",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1022.gif",
+      "name": "band standing rear delt row",
+      "target": "delts",
+      "difficulty": 5
     },
     {
-        "id": 64,
-        "bodyPart":"shoulders",
-        "equipment":"barbell",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0041.gif",
-        "name":"barbell front raise",
-        "target":"delts",
-        "difficulty": 3
-    },
-    {    
-        "id": 65,
-        "bodyPart":"shoulders",
-        "equipment":"barbell",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0067.gif",
-        "name":"barbell one arm snatch",
-        "target":"delts",
-        "difficulty": 7
-    },
-    {    
-        "id": 66,
-        "bodyPart":"shoulders",
-        "equipment":"barbell",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0075.gif",
-        "name":"barbell rear delt raise",
-        "target":"delts",
-        "difficulty": 3
+      "id": 63,
+      "bodyPart": "shoulders",
+      "equipment": "dumbbell",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2137.gif",
+      "name": "dumbbell arnold press",
+      "target": "delts",
+      "difficulty": 6
     },
     {
-        "id": 67,
-        "bodyPart":"shoulders",
-        "equipment":"rope",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0128.gif",
-        "name":"battling ropes",
-        "target":"delts",
-        "difficulty": 6
+      "id": 64,
+      "bodyPart": "shoulders",
+      "equipment": "barbell",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0041.gif",
+      "name": "barbell front raise",
+      "target": "delts",
+      "difficulty": 3
     },
-    {    
-        "id": 68,
-        "bodyPart":"shoulders",
-        "equipment":"cable",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0148.gif",
-        "name":"cable alternate shoulder press",
-        "target":"delts",
-        "difficulty": 6
+    {
+      "id": 65,
+      "bodyPart": "shoulders",
+      "equipment": "barbell",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0067.gif",
+      "name": "barbell one arm snatch",
+      "target": "delts",
+      "difficulty": 7
     },
-    {    
-        "id": 69,
-        "bodyPart":"shoulders",
-        "equipment":"cable",
-        "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/0154.gif",
-        "name":"cable cross-over revers fly",
-        "target":"delts",
-        "difficulty": 5
+    {
+      "id": 66,
+      "bodyPart": "shoulders",
+      "equipment": "barbell",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0075.gif",
+      "name": "barbell rear delt raise",
+      "target": "delts",
+      "difficulty": 3
+    },
+    {
+      "id": 67,
+      "bodyPart": "shoulders",
+      "equipment": "rope",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0128.gif",
+      "name": "battling ropes",
+      "target": "delts",
+      "difficulty": 6
+    },
+    {
+      "id": 68,
+      "bodyPart": "shoulders",
+      "equipment": "cable",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0148.gif",
+      "name": "cable alternate shoulder press",
+      "target": "delts",
+      "difficulty": 6
+    },
+    {
+      "id": 69,
+      "bodyPart": "shoulders",
+      "equipment": "cable",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0154.gif",
+      "name": "cable cross-over revers fly",
+      "target": "delts",
+      "difficulty": 5
     },
     {
       "id": 70,
@@ -642,11 +641,11 @@
     },
     {
       "id": 72,
-      "bodyPart":"upper legs",
-      "equipment":"body weight",
-      "gifUrl":"http://d205bpvrqc9yn1.cloudfront.net/1774.gif",
-      "name":"side bridge hip abduction",
-      "target":"abductors",
+      "bodyPart": "upper legs",
+      "equipment": "body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1774.gif",
+      "name": "side bridge hip abduction",
+      "target": "abductors",
       "difficulty": 4
     },
     {
@@ -701,7 +700,7 @@
       "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0028.gif",
       "name": "barbell clean and press",
       "target": "quads",
-      "difficulty":7
+      "difficulty": 7
     },
     {
       "id": 79,
@@ -811,5 +810,6 @@
       "target": "abs",
       "difficulty": 4
     }
-  ]
+  ],
+  "Favorites": []
 }
