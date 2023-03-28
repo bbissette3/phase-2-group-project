@@ -17,7 +17,7 @@ function App() {
   //filter state
   const [selected, setSelected] = useState([]);
   // fav state
-  const [savedWorkout, setSavedWorkout] = useState([]);
+  const [savedWorkouts, setSavedWorkouts] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/Workouts")
@@ -56,15 +56,15 @@ function App() {
   //end of filter components
 
   // this is for favs
-  const favWorkouts = (exercise) => {
-    if (!savedWorkout.includes(exercise)) {
-      const newExercise = [...savedWorkout, exercise];
-      setSavedWorkout(newExercise);
-    } else if (savedWorkout.includes(exercise)) {
-      const newExercise = savedWorkout.filter(
+  const addFavWorkouts = (exercise) => {
+    if (!savedWorkouts.includes(exercise)) {
+      const newExercise = [...savedWorkouts, exercise];
+      setSavedWorkouts(newExercise);
+    } else if (savedWorkouts.includes(exercise)) {
+      const newExercise = savedWorkouts.filter(
         (oldExercise) => exercise.id !== oldExercise.id
       );
-      setSavedWorkout(newExercise);
+      setSavedWorkouts(newExercise);
     }
   };
   // end of favs
@@ -85,7 +85,7 @@ function App() {
               />
               <CardContainer
                 workoutDataArray={workOutsToShow}
-                favWorkouts={favWorkouts}
+                addFavWorkouts={addFavWorkouts}
               />
             </div>
           }
@@ -95,7 +95,8 @@ function App() {
           element={
             <WorkoutDetails
               workoutDataArray={workoutDataArray}
-              favWorkouts={favWorkouts}
+              addFavWorkouts={addFavWorkouts}
+              savedWorkouts={savedWorkouts}
             />
           }
         />
@@ -103,7 +104,10 @@ function App() {
         <Route
           path="/favorites"
           element={
-            <Favorites savedWorkout={savedWorkout} favWorkouts={favWorkouts} />
+            <Favorites
+              savedWorkouts={savedWorkouts}
+              addFavWorkouts={addFavWorkouts}
+            />
           }
         />
       </Routes>
