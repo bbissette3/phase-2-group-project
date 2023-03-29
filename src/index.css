@@ -115,7 +115,7 @@
 }
 
 .footer {
-  position: sticky;
+  /* position: sticky; */
   padding-top: 10px;
   padding-left: 10px;
   min-height: 10vh;
@@ -177,6 +177,7 @@ p {
 
 .favorites {
   padding-bottom: 30px;
+  background-color: blueviolet;
 }
 
 .favorites-container{
