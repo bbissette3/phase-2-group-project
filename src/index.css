@@ -208,7 +208,7 @@ p {
   height: 2.5rem;
   background: linear-gradient(45deg, transparent, transparent 40%, #e90606);
   /* top: 64.5rem; */
-  bottom: 5%;
+  bottom: 10%;
   right: 2%;
   border-radius: 100%;
   /* animation: pulse 2s infinite; sets animation, pulse is down below, infinite loops */
