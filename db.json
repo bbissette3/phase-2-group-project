@@ -813,15 +813,6 @@
   ],
   "Favorites": [
     {
-      "id": 5,
-      "bodyPart": "back",
-      "equipment": "stability ball",
-      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1314.gif",
-      "name": "back extension on exercise ball",
-      "target": "spine",
-      "difficulty": 1
-    },
-    {
       "id": 10,
       "bodyPart": "back",
       "equipment": "cable",
@@ -829,6 +820,60 @@
       "name": "cable incline pushdown",
       "target": "lats",
       "difficulty": 2
+    },
+    {
+      "id": 2,
+      "bodyPart": "back",
+      "equipment": "band",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1010.gif",
+      "name": "band straight leg deadlift",
+      "target": "spine",
+      "difficulty": 5
+    },
+    {
+      "id": 7,
+      "bodyPart": "back",
+      "equipment": "body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1405.gif",
+      "name": "back pec stretch",
+      "target": "lats",
+      "difficulty": 1
+    },
+    {
+      "id": 8,
+      "bodyPart": "back",
+      "equipment": "barbell",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1316.gif",
+      "name": "barbell bent arm pullover",
+      "target": "lats",
+      "difficulty": 2
+    },
+    {
+      "id": 38,
+      "bodyPart": "lower arms",
+      "equipment": "body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1421.gif",
+      "name": "modified push up to lower arms",
+      "target": "forearms",
+      "difficulty": 3
+    },
+    {
+      "id": 52,
+      "bodyPart": "upper arms",
+      "equipment": "leverage machine",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0019.gif",
+      "name": "assisted triceps dip (kneeling)",
+      "target": "triceps",
+      "difficulty": 2
+    },
+    {
+      "id": 62,
+      "bodyPart": "shoulders",
+      "equipment": "band",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1022.gif",
+      "name": "band standing rear delt row",
+      "target": "delts",
+      "difficulty": 5
     }
   ]
 }
