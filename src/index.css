@@ -122,6 +122,12 @@
   background-color: rgb(5, 6, 0);
 }
 
+.footer.centered-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .trainers {
  background-color: rgb(162, 64, 64);background-image: linear-gradient(rgb(42, 42, 147), white, rgb(175, 35, 35));adding-left: 10px;
  padding-right: 10px;
