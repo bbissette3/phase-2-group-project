@@ -19,7 +19,7 @@ const FilterWorkouts = ({ categories, toggleCategory, selected }) => {
   return (
     <div className="filters-container">
       <div className="checkbox">
-        <h5>Filter</h5>
+        <h5 style={{ fontWeight: 'bold' }}>Filter</h5>
         {categoryButtons}
       </div>
     </div>

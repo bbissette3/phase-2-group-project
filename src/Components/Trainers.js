@@ -38,7 +38,7 @@ const Trainers = () => {
                         Hey everyone! My name is Aubrey and I've been a personal trainer for 4 
                         years and a certified nutrition coach for 6 years! I have a major in 
                         Health and Physical Education with a minor in Sports Studies. I recently 
-                        started training for my first Women's Figure Classic competition and am 
+                        started training for my fourth Women's Figure Classic competition and am 
                         set to compete in June! My training specialties include HIIT, functional 
                         fitness and nutritional coaching!
                     </p>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Button, Icon, Grid } from "semantic-ui-react";
+import { Button, Icon, Grid, Image } from "semantic-ui-react";
 import meter1 from "../images/meter1.png";
 import meter2 from "../images/meter2.png";
 import meter3 from "../images/meter3.png";
@@ -58,7 +58,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
           </Grid.Column>
           <Grid.Column>
             <h2>Gif Demo!</h2>
-            <img src={gifUrl} alt={name} />
+            <Image src={gifUrl} alt={name} centered/>
           </Grid.Column>
           <Grid.Column>
             <h2>Difficulty Level:</h2>
@@ -73,7 +73,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
             <Icon name="arrow left" />
           </Button.Content>
         </Button>
-        <Button color="blue" onClick={() => addFavWorkouts(workoutDetails)}>
+        <Button color="instagram" onClick={() => addFavWorkouts(workoutDetails)}>
           <Button.Content>
             {savedWorkouts.find((workout) => workout.id === workoutDetails.id)
               ? "Unsave"
