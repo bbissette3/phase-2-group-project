@@ -8,6 +8,7 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: rgb(154, 190, 219);
 }
 
 .header-bar {
@@ -194,7 +195,7 @@ p {
 .workout-details-container {
   padding-top: 25px;
   padding-bottom: 10px;
-  background-color: rgba(154, 190, 219, 0.861);
+  background-color: rgb(175, 201, 222);
 }
 
 .workout-details-buttons {
