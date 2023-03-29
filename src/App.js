@@ -9,6 +9,7 @@ import Home from "./Components/Home";
 import Trainers from "./Components/Trainers";
 import Favorites from "./Components/Favorites";
 import WorkoutDetails from "./Components/WorkoutDetails";
+import ScrollTopButton from "./Components/ScrollTopButton";
 
 function App() {
   const [workoutDataArray, setWorkoutDataArray] = useState([]);
@@ -30,7 +31,7 @@ function App() {
       setSavedWorkouts(favWorkouts);
     };
     fetchData();
-  });
+  }, []);
 
   //this is all for the filter
   const categories = [
@@ -125,6 +126,7 @@ function App() {
           element={<Favorites savedWorkouts={savedWorkouts} />}
         />
       </Routes>
+      <ScrollTopButton />
       <Footer />
     </main>
   );
