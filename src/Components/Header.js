@@ -16,28 +16,28 @@ const Header = () => {
           </Grid.Column>
           <Grid.Column>
             <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>
-              <Button color="blue" basic={location.pathname !== "/"}>
+              <Button color="black" basic={location.pathname !== "/"}>
                 Home Page
               </Button>
             </Link>
           </Grid.Column>
           <Grid.Column>
             <Link to="/trainers" aria-current={location.pathname === "/trainers" ? "page" : undefined}>
-              <Button color="blue" basic={location.pathname !== "/trainers"}>
+              <Button color="black" basic={location.pathname !== "/trainers"}>
                 Our Trainers
               </Button>
             </Link>
           </Grid.Column>
           <Grid.Column>
             <Link to="/workouts" aria-current={location.pathname === "/workouts" ? "page" : undefined}>
-              <Button color="blue" basic={location.pathname !== "/workouts"}>
+              <Button color="black" basic={location.pathname !== "/workouts"}>
                 Free Workouts
               </Button>
             </Link>
           </Grid.Column>
           <Grid.Column>
             <Link to="/favorites" aria-current={location.pathname === "/favorites" ? "page" : undefined}>
-              <Button color="blue" basic={location.pathname !== "/favorites"}>
+              <Button color="black" basic={location.pathname !== "/favorites"}>
                 My Favorite
               </Button>
             </Link>

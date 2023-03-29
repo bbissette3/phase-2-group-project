@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&family=Quicksand:wght@300&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,18 +11,18 @@ html {
 }
 
 .header-bar {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Animated-eagle-mage-0036.gif");
+  background-color: rgb(154, 190, 219)
 }
 
 .home {
-  background-image: linear-gradient(rgb(175, 35, 35), white, rgb(42, 42, 147));
+  background-image: linear-gradient(rgb(175, 35, 35), white, rgb(32, 71, 189));
 }
 
 #team-logo {
   /* box-shadow: 2px 2px 5px black, 0 0 25px blue, 0 0 5px darkblue; */
   margin-top: 50px;
   height: 500px;
-  width: 600px;
+  width: 620px;
 }
 
 .home-bio h2 {
@@ -57,18 +58,28 @@ html {
   padding-top: 25px;
   font-family: "Bebas Neue";
   font-size: 25px;
-  background-color: rgb(179, 179, 181);
 }
 
 .filters-container h5 {
-  font-family: "Gruppo";
-  font-size: 25px;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+
 }
 
 .container {
   display: flex;
   gap: 1rem;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(90deg, rgb(175, 35, 35), white, rgb(32, 71, 189));
+  background-size: 400% 400%;
+  animation: gradient 6s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gradient { 
+ 0% {background-position: 0%}
+ 100% {background-position: 100%;}
 }
 
 .checkbox {
@@ -83,7 +94,7 @@ html {
 }
 
 .checkbox-wrapper:hover {
-  box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
+  box-shadow: 0 0 10px black;
 }
 
 .workout-list {
@@ -105,7 +116,7 @@ html {
 
 .ui.card:hover {
   transform: scale(0.95);
-  box-shadow: 0 0 10px rgba(245, 4, 4, 0.5);
+  box-shadow: 0 0 10px black;
 }
 
 .ui.item.button:hover {
@@ -117,11 +128,10 @@ html {
 }
 
 .footer {
-  /* position: sticky; */
   padding-top: 10px;
   padding-left: 10px;
   min-height: 10vh;
-  background-color: rgb(5, 6, 0);
+  background-color: rgb(154, 190, 219)
 }
 
 .footer.centered-column {
@@ -132,8 +142,8 @@ html {
 
 .trainers {
   background-color: rgb(162, 64, 64);
-  background-image: linear-gradient(rgb(42, 42, 147), white, rgb(175, 35, 35));
-  adding-left: 10px;
+  background-image: linear-gradient(rgb(32, 71, 189), white, rgb(175, 35, 35));
+  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -174,7 +184,9 @@ p {
 }
 
 .workout-details-container {
+  padding-top: 25px;
   padding-bottom: 10px;
+  background-color: rgba(154, 190, 219, 0.861)
 }
 
 .workout-details-buttons {
@@ -187,7 +199,13 @@ p {
 
 .favorites {
   padding-bottom: 30px;
-  background-color: blueviolet;
+  background-image: linear-gradient(25deg, rgb(175, 35, 35), white, rgb(32, 71, 189));
+}
+
+.favorites h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 5px white
 }
 
 .favorites-container {
