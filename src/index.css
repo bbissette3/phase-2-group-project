@@ -220,7 +220,7 @@ p {
   left: 5px;
   right: 5px;
   bottom: 5px;
-  background: #cdcaca;
+  background: #1211112b;
   border-radius: 50%;
 }
 .up::after {
@@ -247,10 +247,15 @@ p {
     filter: hue-rotate(50deg);
   }
 }
+
 .up i {
   position: relative;
   top: 4%;
   left: 17%;
   color: rgb(14, 82, 229);
   z-index: 2;
+}
+
+.up i::after {
+  display: none;
 }
