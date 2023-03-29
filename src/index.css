@@ -224,7 +224,7 @@ p {
   position: fixed;
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(45deg, transparent, transparent 40%, #e90606);
+
   /* top: 64.5rem; */
   bottom: 10%;
   right: 2%;
@@ -238,7 +238,7 @@ p {
   left: 5px;
   right: 5px;
   bottom: 5px;
-  background: #1211112b;
+  background: black;
   border-radius: 50%;
 }
 .up::after {
@@ -248,7 +248,7 @@ p {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: linear-gradient(45deg, transparent, transparent 50%, #cb0c0c);
+  background: linear-gradient(85deg, transparent, transparent 30%, red);
   border-radius: 100%;
   z-index: 1;
   /* z-index: 1; */
@@ -262,15 +262,15 @@ p {
   }
   100% {
     transform: rotate(360deg);
-    filter: hue-rotate(50deg);
+    filter: hue-rotate(250deg);
   }
 }
 
 .up i {
   position: relative;
-  top: 4%;
+  top: 9%;
   left: 17%;
-  color: rgb(14, 82, 229);
+  color: white;
   z-index: 2;
 }
 
