@@ -10,6 +10,7 @@ import Trainers from "./Components/Trainers";
 import Favorites from "./Components/Favorites";
 import WorkoutDetails from "./Components/WorkoutDetails";
 import ScrollTopButton from "./Components/ScrollTopButton";
+import Cursed from "./Components/Cursed"
 
 function App() {
   const [workoutDataArray, setWorkoutDataArray] = useState([]);
@@ -95,6 +96,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cursed" element={<Cursed />} />
         <Route
           path="/workouts"
           element={

@@ -297,3 +297,8 @@ p {
 .up i::after {
   display: none;
 }
+
+#cursed-image {
+  width: 800px;
+  height: 800px;
+}

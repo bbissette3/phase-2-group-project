@@ -30,7 +30,9 @@ const Header = () => {
       <Grid columns={6} verticalAlign="middle">
         <Grid.Row>
           <Grid.Column>
+          <Link to="/cursed" >
             <Image src={logo} width={200} />
+            </Link>
           </Grid.Column>
           <Grid.Column>
             <Link
