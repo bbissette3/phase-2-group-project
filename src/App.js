@@ -22,9 +22,6 @@ function App() {
     fetch("http://localhost:3001/Workouts")
       .then((response) => response.json())
       .then((workoutData) => setWorkoutDataArray(workoutData));
-  }, []);
-
-  useEffect(() => {
     const fetchData = async () => {
       const resp = await fetch("http://localhost:3001/Favorites");
       const favWorkouts = await resp.json();
