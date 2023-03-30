@@ -5,7 +5,7 @@ import cursedImage from "../images/cursed.png"
 const Cursed=() => {
     return (
         <div className='cursed'>
-            <h2> 
+            <h2 className='cursed-header'> This is how YOU can look in just 3 months with Swolldiers!
                 <img id="cursed-image"src={cursedImage}  />
             </h2>
         </div> 

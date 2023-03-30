@@ -302,3 +302,10 @@ p {
   width: 800px;
   height: 800px;
 }
+
+.cursed-header {
+  padding-top: 20px;
+  color: rgb(196, 198, 214);
+  text-shadow: 2px 2px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: "Bebas Neue";
+}
