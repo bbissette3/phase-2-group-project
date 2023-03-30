@@ -63,7 +63,7 @@ class Home extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button id="home-button" animated fluid color="youtube">
+            <Button id="home-button" animated fluid color="red">
               <Button.Content visible>Get my first month free!</Button.Content>
               <Button.Content hidden>
                 <Icon name="paper plane outline" /> Sent!
