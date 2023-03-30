@@ -46,15 +46,15 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
     <div className="workout-details-container">
       <Grid columns={3} divided>
         <Grid.Row>
-          <Grid.Column>
+          <Grid.Column verticalAlign="center">
             <h2>Workout Name:</h2>
             <p>{name}</p>
             <h2>Muscle Group:</h2>
             <p>
               {bodyPart} : {target}
             </p>
-            <h2>Equiment or BodyWeight?</h2>
-            <p>Equipment: {equipment}</p>
+            <h2>Equiment Needed:</h2>
+            <p>{equipment}</p>
           </Grid.Column>
           <Grid.Column>
             <h2>Gif Demo!</h2>
