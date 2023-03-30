@@ -26,7 +26,7 @@ const Trainers = () => {
                         NPC Phil Health Classic Tournaments, placing first in 3 of 
                         those competitions. I strive to help everyone reach their fitness 
                         goals, no matter their circumstance. I specialize in natural body building, 
-                        and hypertrophy training.
+                        and hypertrophy training. BICEP!!.
                      </p>
                     <div className='trainers-buttons'>
                         <Button
