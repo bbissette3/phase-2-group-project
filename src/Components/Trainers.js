@@ -28,19 +28,21 @@ const Trainers = () => {
                         goals, no matter their circumstance. I specialize in natural body building, 
                         and hypertrophy training.
                      </p>
-                    <Button
-                        color="black" 
-                        basic
-                        animated
-                        onClick={() =>
-                            handleClick("https://www.linkedin.com/in/brian-bissette/")
-                        }
-                    >
-                    <Button.Content visible>Find me on LinkedIn!</Button.Content>
-                    <Button.Content hidden>
-                    <Icon name="linkedin" />
-                    </Button.Content>
-                    </Button>
+                    <div className='trainers-buttons'>
+                        <Button
+                            color="black" 
+                            basic
+                            animated
+                            onClick={() =>
+                                handleClick("https://www.linkedin.com/in/brian-bissette/")
+                            }
+                        >
+                        <Button.Content visible>Find me on LinkedIn!</Button.Content>
+                        <Button.Content hidden>
+                        <Icon name="linkedin" />
+                        </Button.Content>
+                        </Button>
+                    </div>
                 </Grid.Column>
                 <Grid.Column className="centered-column" textAlign="center">
                     <Image id="training-photo" src={tim} size='medium' circular centered/>
@@ -52,19 +54,21 @@ const Trainers = () => {
                         and eventually got licensed to train professionally. I currently specialize 
                         in Powerlifting, HIIT and hypertrophy training.
                     </p>
-                    <Button
-                        color="black" 
-                        basic
-                        animated
-                        onClick={() =>
-                            handleClick("https://www.linkedin.com/in/timothynhoang/")
-                        }
-                    >
-                    <Button.Content visible>Find me on LinkedIn!</Button.Content>
-                    <Button.Content hidden>
-                    <Icon name="linkedin" />
-                    </Button.Content>
-                    </Button>
+                    <div className='trainers-buttons'>
+                        <Button
+                            color="black" 
+                            basic
+                            animated
+                            onClick={() =>
+                                handleClick("https://www.linkedin.com/in/timothynhoang/")
+                            }
+                        >
+                        <Button.Content visible>Find me on LinkedIn!</Button.Content>
+                        <Button.Content hidden>
+                        <Icon name="linkedin" />
+                        </Button.Content>
+                        </Button>
+                    </div>
                 </Grid.Column>
                 <Grid.Column className="centered-column" textAlign="center">
                     <Image id="training-photo" src={aubrey} size='medium' circular centered/>  
@@ -76,19 +80,21 @@ const Trainers = () => {
                         set to compete in June! My training specialties include functional 
                         fitness and nutritional coaching!
                     </p>
-                    <Button
-                        color="black" 
-                        basic
-                        animated
-                        onClick={() =>
-                            handleClick("https://www.linkedin.com/in/aubrey-loudenslager/")
-                        }
-                    >
-                    <Button.Content visible>Find me on LinkedIn!</Button.Content>
-                    <Button.Content hidden>
-                    <Icon name="linkedin" />
-                    </Button.Content>
-                    </Button>
+                    <div className='trainers-buttons'>
+                        <Button
+                            color="black" 
+                            basic
+                            animated
+                            onClick={() =>
+                                handleClick("https://www.linkedin.com/in/aubrey-loudenslager/")
+                            }
+                        >
+                        <Button.Content visible>Find me on LinkedIn!</Button.Content>
+                        <Button.Content hidden>
+                        <Icon name="linkedin" />
+                        </Button.Content>
+                        </Button>
+                    </div>
                 </Grid.Column>
             </Grid.Row>
         </Grid>
