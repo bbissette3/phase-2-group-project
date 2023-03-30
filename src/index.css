@@ -15,6 +15,12 @@ html {
   background-color: rgb(154, 190, 219);
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .home {
   background-image: linear-gradient(rgb(175, 35, 35), white, rgb(32, 71, 189));
 }
