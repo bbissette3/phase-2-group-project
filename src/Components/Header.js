@@ -12,7 +12,9 @@ const Header = () => {
       <Grid columns={5} verticalAlign="middle">
         <Grid.Row>
           <Grid.Column>
+          <Link to="/cursed" >
             <Image src={logo} width={200} />
+            </Link>
           </Grid.Column>
           <Grid.Column>
             <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>
