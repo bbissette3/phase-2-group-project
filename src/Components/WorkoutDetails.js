@@ -46,7 +46,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
     <div className="workout-details-container">
       <Grid columns={3} divided>
         <Grid.Row>
-          <Grid.Column verticalAlign="center">
+          <Grid.Column verticalAlign="middle">
             <h2>Exercise Name:</h2>
             <p>{name}</p>
             <h2>Muscle Group:</h2>

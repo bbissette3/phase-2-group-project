@@ -811,51 +811,5 @@
       "difficulty": 4
     }
   ],
-  "Favorites": [
-    {
-      "id": 52,
-      "bodyPart": "upper arms",
-      "equipment": "leverage machine",
-      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0019.gif",
-      "name": "assisted triceps dip (kneeling)",
-      "target": "triceps",
-      "difficulty": 2
-    },
-    {
-      "id": 53,
-      "bodyPart": "upper arms",
-      "equipment": "band",
-      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0975.gif",
-      "name": "band close-grip push-up",
-      "target": "triceps",
-      "difficulty": 5
-    },
-    {
-      "id": 62,
-      "bodyPart": "shoulders",
-      "equipment": "band",
-      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1022.gif",
-      "name": "band standing rear delt row",
-      "target": "delts",
-      "difficulty": 5
-    },
-    {
-      "id": 65,
-      "bodyPart": "shoulders",
-      "equipment": "barbell",
-      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0067.gif",
-      "name": "barbell one arm snatch",
-      "target": "delts",
-      "difficulty": 7
-    },
-    {
-      "id": 69,
-      "bodyPart": "shoulders",
-      "equipment": "cable",
-      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0154.gif",
-      "name": "cable cross-over revers fly",
-      "target": "delts",
-      "difficulty": 5
-    }
-  ]
+  "Favorites": []
 }
