@@ -47,7 +47,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
       <Grid columns={3} divided>
         <Grid.Row>
           <Grid.Column verticalAlign="center">
-            <h2>Workout Name:</h2>
+            <h2>Exercise Name:</h2>
             <p>{name}</p>
             <h2>Muscle Group:</h2>
             <p>
@@ -73,7 +73,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
             <Icon name="arrow left" />
           </Button.Content>
         </Button>
-        <Button color="instagram" onClick={() => addFavWorkouts(workoutDetails)}>
+        <Button color="vk" onClick={() => addFavWorkouts(workoutDetails)}>
           <Button.Content>
             {savedWorkouts.find((workout) => workout.id === workoutDetails.id)
               ? "Unsave"

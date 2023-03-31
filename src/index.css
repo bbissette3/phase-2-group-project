@@ -8,11 +8,11 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(154, 190, 219);
+  background-color: rgb(140, 176, 222);
 }
 
 .header-bar {
-  background-color: rgb(154, 190, 219);
+  background-color: rgb(140, 176, 222);
 }
 
 .login {
@@ -22,7 +22,7 @@ html {
 }
 
 .home {
-  background-image: linear-gradient(rgb(175, 35, 35), white, rgb(32, 71, 189));
+  background-image: linear-gradient(rgb(175, 35, 35), white, rgb(9, 56, 198));
 }
 
 #team-logo {
@@ -81,7 +81,7 @@ html {
     90deg,
     rgb(175, 35, 35),
     white,
-    rgb(32, 71, 189)
+    rgb(9, 56, 198)
   );
   background-size: 400% 400%;
   animation: gradient 6s linear infinite;
@@ -146,7 +146,7 @@ html {
   padding-top: 10px;
   padding-left: 10px;
   min-height: 10vh;
-  background-color: rgb(154, 190, 219);
+  background-color: rgb(140, 176, 222);
 }
 
 .footer.centered-column {
@@ -157,7 +157,7 @@ html {
 
 .trainers {
   background-color: rgb(162, 64, 64);
-  background-image: linear-gradient(rgb(32, 71, 189), white, rgb(175, 35, 35));
+  background-image: linear-gradient(rgb(9, 56, 198), white, rgb(175, 35, 35));
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -209,7 +209,8 @@ p {
 .workout-details-container {
   padding-top: 25px;
   padding-bottom: 10px;
-  background-color: rgb(175, 201, 222);
+  background-color: rgb(165, 191, 224);
+  color: rgb(40, 75, 114);
 }
 
 .workout-details-buttons {
@@ -307,10 +308,13 @@ p {
 }
 
 .cursed-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(165, 191, 224);
 }
 
 .cursed-header {
