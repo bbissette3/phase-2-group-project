@@ -18,7 +18,7 @@ const Footer = () => {
         <Grid centered columns={3} verticalAlign="middle">
           <Grid.Column className="centered-column" textAlign="center">
             <Button
-              color="instagram"
+              color="vk"
               animated
               onClick={() =>
                 handleClick("https://www.linkedin.com/in/antonio-reid/")
@@ -40,7 +40,7 @@ const Footer = () => {
           </Grid.Column>
           <Grid.Column className="centered-column" textAlign="center">
             <Button
-              color="instagram"
+              color="vk"
               animated
               onClick={() =>
                 handleClick(
