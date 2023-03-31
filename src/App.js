@@ -20,11 +20,11 @@ function App() {
   const [savedWorkouts, setSavedWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch("https://phase-2-group-project-api.vercel.app/Workouts")
+    fetch("https://swolldiers-api.onrender.com/Workouts")
       .then((response) => response.json())
       .then((workoutData) => setWorkoutDataArray(workoutData));
     const fetchData = async () => {
-      const resp = await fetch("https://phase-2-group-project-api.vercel.app/Favorites");
+      const resp = await fetch("https://swolldiers-api.onrender.com/Favorites");
       const favWorkouts = await resp.json();
       setSavedWorkouts(favWorkouts);
     };
@@ -72,14 +72,14 @@ function App() {
     };
 
     if (!savedWorkouts.find((workout) => workout.id === exercise.id)) {
-      fetch("https://phase-2-group-project-api.vercel.app/Favorites", postObj)
+      fetch("https://swolldiers-api.onrender.com/Favorites", postObj)
         .then((resp) => resp.json())
         .then((exercise) => {
           const updateFavorites = [...savedWorkouts, exercise];
           setSavedWorkouts(updateFavorites);
         });
     } else {
-      fetch(`https://phase-2-group-project-api.vercel.app/Favorites/${exercise.id}`, {
+      fetch(`https://swolldiers-api.onrender.com/Favorites/${exercise.id}`, {
         method: "DELETE",
       }).then(() => {
         const updateFavorites = savedWorkouts.filter(

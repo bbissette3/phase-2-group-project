@@ -17,7 +17,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
   useEffect(() => {
     async function fetchData() {
       const rawData = await fetch(
-        `https://phase-2-group-project-api.vercel.app/Workouts/${workoutId}`
+        `https://swolldiers-api.onrender.com/Workouts/${workoutId}`
       );
       const data = await rawData.json();
       setWorkoutDetails(data);
