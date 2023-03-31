@@ -17,7 +17,7 @@ const WorkoutDetails = ({ addFavWorkouts, savedWorkouts }) => {
   useEffect(() => {
     async function fetchData() {
       const rawData = await fetch(
-        `http://localhost:3001/Workouts/${workoutId}`
+        `https://phase-2-group-project-api.vercel.app/Workouts/${workoutId}`
       );
       const data = await rawData.json();
       setWorkoutDetails(data);

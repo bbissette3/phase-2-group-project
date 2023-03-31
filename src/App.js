@@ -20,11 +20,11 @@ function App() {
   const [savedWorkouts, setSavedWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/Workouts")
+    fetch("https://phase-2-group-project-api.vercel.app/Workouts")
       .then((response) => response.json())
       .then((workoutData) => setWorkoutDataArray(workoutData));
     const fetchData = async () => {
-      const resp = await fetch("http://localhost:3001/Favorites");
+      const resp = await fetch("https://phase-2-group-project-api.vercel.app/Favorites");
       const favWorkouts = await resp.json();
       setSavedWorkouts(favWorkouts);
     };
@@ -72,14 +72,14 @@ function App() {
     };
 
     if (!savedWorkouts.find((workout) => workout.id === exercise.id)) {
-      fetch("http://localhost:3001/Favorites", postObj)
+      fetch("https://phase-2-group-project-api.vercel.app/Favorites", postObj)
         .then((resp) => resp.json())
         .then((exercise) => {
           const updateFavorites = [...savedWorkouts, exercise];
           setSavedWorkouts(updateFavorites);
         });
     } else {
-      fetch(`http://localhost:3001/Favorites/${exercise.id}`, {
+      fetch(`https://phase-2-group-project-api.vercel.app/Favorites/${exercise.id}`, {
         method: "DELETE",
       }).then(() => {
         const updateFavorites = savedWorkouts.filter(
